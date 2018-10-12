@@ -45,9 +45,9 @@
   },
   "dependencies": {
     "@adonisjs/generic-exceptions": "^1.0.0",
-    "debug": "^3.0.1",
+    "debug": "^3.1.0",
     "got": "^7.1.0",
-    "lodash": "^4.17.4",
+    "lodash": "^4.17.5",
     "oauth": "^0.9.15"
   },
   "repository": {

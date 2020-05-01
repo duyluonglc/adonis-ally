@@ -15,7 +15,9 @@
     "test:local": "FORCE_COLOR=true node bin/index.js --local",
     "test": "nyc npm run test:local",
     "test:win": "set FORCE_COLOR=true && node bin/index.js --win",
-    "coverage": "nyc report --reporter=text-lcov | coveralls"
+    "coverage": "nyc report --reporter=text-lcov | coveralls",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "keywords": [
     "adonis",
@@ -36,7 +38,9 @@
     "standard": "^10.0.3"
   },
   "standard": {
-    "global": ["use"]
+    "global": [
+      "use"
+    ]
   },
   "config": {
     "commitizen": {
@@ -48,7 +52,8 @@
     "debug": "^3.0.1",
     "got": "^7.1.0",
     "lodash": "^4.17.4",
-    "oauth": "^0.9.15"
+    "oauth": "^0.9.15",
+    "snyk": "^1.316.1"
   },
   "repository": {
     "type": "git",
@@ -57,5 +62,6 @@
   "bugs": {
     "url": "https://github.com/adonisjs/adonis-ally/issues"
   },
-  "homepage": "https://github.com/adonisjs/adonis-ally#readme"
+  "homepage": "https://github.com/adonisjs/adonis-ally#readme",
+  "snyk": true
 }
